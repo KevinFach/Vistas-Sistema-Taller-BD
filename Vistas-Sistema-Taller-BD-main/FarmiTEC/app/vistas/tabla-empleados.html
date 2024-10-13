@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>FarmiTEC</title>
+    <!-- logos barra opciones -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <!-- signo de dinero -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- signo de cruz rojas-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <!--Tipo de letra Roboto link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <!--Estilos links-->
+    <link rel="stylesheet" href="../../public/css/form.css">
+    <!--Estilo tablas-->
+    <link rel="stylesheet" href="../../public/css/tablas.css">
+    <!--Este es el icono crud eliminar-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <!--Este es el icono crud editar-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <div class="barra-lateral" id="barra-lateral">
+        <div id="barra-lateral-contenedor-titulo">
+            <p id="titulo-barra-lateral">   FarmiTEC <i class="fi fi-ss-pharmacy">  </i></p>
+            
+        </div>
+        <div id="barra-lateral-contenedor-botonera">
+           <a href="" class="botones-botonera-lateral"><i class="fi fi-rs-truck-side"></i> Proveedores</a>
+            <a href="" class="botones-botonera-lateral"><i class="fi fi-rs-box"></i> Inventario</a>
+            <a href="" class="botones-botonera-lateral"><i class="fi fi-rr-usd-circle"></i> Ventas</a>
+            <a href="" class="botones-botonera-lateral"><i class="fi fi-rs-users-alt"></i></i> Empleados</a>
+            <a href="" class="botones-botonera-lateral"><i class="fi fi-rs-key"></i> Usuarios</a>
+            
+              </div>
+    </div>
+
+    <div id="contenedor-elementos">
+        <div id="titulo-principal">
+            <div id="titulo-apartado-actual">
+                <i id="titulo-icono"  class="fi fi-rs-dashboard-monitor"></i>
+                <h2 id="titulo-apartado">Punto de Venta</h2>
+            </div>
+            
+
+            <div id="tiempo">
+                <p id="fecha"></p>
+                <p id="reloj"></p>
+            </div>
+           
+        </div>
+        <!-- en este div va el contenido a desarrollar dependiendo la vista -->
+        <div id="contenedor-principal-tablas">
+            
+            <div class="contenedor-tabla" >
+
+                <div id="contenedor-buscador-tabla">
+
+                    <form action="" id="buscador">
+                    
+                        <label for="" class="texto-buscadores">Buscador:</label>                   
+                        <input class="input-buscar" id="input-buscador" type="text" placeholder="Buscar por: RFC" >
+                        
+                        <label for="" class="texto-buscadores">Buscador2:</label>                   
+                        <input class="input-buscar" id="input-buscador" type="text" placeholder="Buscar por: RFC" >
+                        
+                        
+                        
+                        
+                        <input id="boton-buscar-registros" type="submit" value="Buscar">
+                   
+
+                    </form>
+                    
+
+                </div>
+
+
+                <h2 id="titulo-tabla">Empleados</h2>
+                
+                <table>
+                    <thead>
+                    <tr>
+                        <th>RFC</th>
+                        <th>Nombre(s)</th>
+                        <th>Apellido(s)</th>
+                        <th>Turno</th>
+                        <th>Nomina</th>
+                        <th>Puesto</th>
+                        <th>Telefono</th>
+                        <th>Correo</th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="contenido-tabla">
+                        <td>CURL023FJ</td>
+                        <td>Negreira Messi</td>
+                        <td>CR7>Pessi</td>
+                        <td>Matutino</td>
+                        <td>$1500.23</td>
+                        <td>Vendedor</td>
+                        <td>229 2219377</td>
+                        <td>rosas@hotmail.com</td>
+                        <td> <a href="" class="boton-eliminar"><i class="fi fi-bs-trash"></i></a>
+                            <a href="" class="boton-editar"><i class="fi fi-br-file-edit"></i></a></td>
+                    </tr>
+                    <tr class="contenido-tabla"></tr>
+                        <td>CURL023FJ</td>
+                        <td>Leonardo Daniel</td>
+                        <td>Cruz Rosas</td>
+                        <td>Matutino</td>
+                        <td>$1500.23</td>
+                        <td>Vendedor</td>
+                        <td>229 2219377</td>
+                        <td>cruzrosas200220@hotmail.com</td>
+                        <td><a href="" class="boton-eliminar"><i class="fi fi-bs-trash"></i></a>
+                            <a href="" class="boton-editar"><i class="fi fi-br-file-edit"></i></a></td>
+                    </tr>
+                </tbody>
+                </table>
+
+
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+
+    
+
+
+
+    <script src="../../public/js/hora.js"></script>
+    <script src="../../public/js/fecha.js"></script>
+    
+</body>
+</html>
